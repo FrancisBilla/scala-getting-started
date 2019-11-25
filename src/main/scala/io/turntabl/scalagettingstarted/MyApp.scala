@@ -48,7 +48,7 @@ object MyApp extends App {
     areWeekendDays("monday","saturday","thursday","friday","sunday")
 
     //10
-    "monday" to "friday" foreach(areWeekendDays())
+    areWeekendDays("monday","friday","sunday") foreach(println)
 
     //11
 
