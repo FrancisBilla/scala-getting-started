@@ -50,7 +50,11 @@ object MyApp extends App {
     //10
     "monday" to "friday" foreach(areWeekendDays())
 
+    //11
 
+    def timesInt(x: String ,y: Int)= x * y
+
+    timesInt("Hello",4)
 
 
 
