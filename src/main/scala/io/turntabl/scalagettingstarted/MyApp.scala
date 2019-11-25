@@ -24,13 +24,36 @@ object MyApp extends App {
     odd(9)
 
     //6
-    //def wordsToLower(word: String*)= word map(_.toLowerCase)
 
-    def toLength(s: String) = {
-        //val foo: java.lang.String = "hello"
-        //sfoo
+    def wordsToLower(word: String*)= word map(_.toLowerCase)
+    wordsToLower("Bill", "DORA", "vEe")
+
+    //7
+
+    def even2(x: Int)= x % 2 ==0
+    even2(6)
+
+    //8
+
+    def isWeekendDay(day: String)= day match {
+        case "saturday" | "sunday" => true
+        case _ => false
     }
 
-    def wtl(words: String*) = words.map(_)
+    //9
+
+    def areWeekendDays(day: String*)=
+        day map(isWeekendDay)
+
+    areWeekendDays("monday","saturday","thursday","friday","sunday")
+
+    //10
+    "monday" to "friday" foreach(areWeekendDays())
+
+
+
+
+
+
 }
 
